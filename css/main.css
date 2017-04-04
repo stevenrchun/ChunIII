@@ -182,6 +182,11 @@ canvas {
   margin-top: 5px;
 }
 
+.haberdash-link {
+  text-decoration: none;
+  color: white;
+}
+
 .haberdash-logo {
   height: 40px;
   margin-left: 10px;
