@@ -99,6 +99,7 @@ textarea {
 body {
   margin: 0;
 }
+
 .title {
   display: flex;
   flex-flow: column;
@@ -110,15 +111,22 @@ body {
 .hello {
   margin: 0;
   font-size: 80px;
+  opacity: 0;
 }
 
 .subtitle {
   margin: 0;
   font-size: 30px;
+  opacity: 0;
 }
 
 .tiny {
   font-size: 10px;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
 }
 
 .space {

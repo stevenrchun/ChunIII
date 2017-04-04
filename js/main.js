@@ -3,7 +3,7 @@ particlesJS.load('particles-js', 'js/particles.json', function() {
 });
 
 $(window).load(function() {
-  $(".title").addClass("animated fadeInDown");
-  $(".subtitle").addClass("animated fadeInDown");
-  $(".tiny").addClass("animated fadeInDown");
+  $(".hello").addClass("visible animated fadeInDown");
+  $(".subtitle").addClass("visible animated fadeInDown");
+  $(".tiny").addClass("visible animated fadeInDown");
 });
