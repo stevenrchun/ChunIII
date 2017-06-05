@@ -130,7 +130,6 @@ body {
 }
 
 .space {
-  width: 100%;
   height: 97vh;
   background-image: url("../img/iss044e069046.jpg");
   background-size: cover;
@@ -145,7 +144,6 @@ canvas {
 }
 
 .haberdash {
-  width: 100%;
   height: 100vh;
   background-color: #E74C3C;
   display: flex;
