@@ -98,6 +98,7 @@ textarea {
    ========================================================================== */
 body {
   margin: 0;
+  background-color: black;
 }
 
 .title {
@@ -131,7 +132,7 @@ body {
 
 .space {
   height: 97vh;
-  background-image: url("../img/iss044e069046.jpg");
+  background-image: url("../img/optimizedbackground.png");
   background-size: cover;
   padding: 1px;
 }
