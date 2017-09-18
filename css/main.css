@@ -98,15 +98,13 @@ textarea {
    ========================================================================== */
 body {
   margin: 0;
-  background-color: black;
+  background-color: #ec77ab;
 }
 
 .title {
   display: flex;
   flex-flow: column;
-  flex: 0 1 30%;
-  margin-left: 8vh;
-  margin-top: 15vh;
+  text-align: center;
 }
 
 .hello {
@@ -131,9 +129,13 @@ body {
 }
 
 .space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 97vh;
-  background-image: url("../img/optimizedbackground.png");
+  background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
   background-size: cover;
+  background-attachment: fixed;
   padding: 1px;
 }
 
@@ -144,9 +146,8 @@ canvas {
   height: 97% !important;
 }
 
-.haberdash {
+.project {
   height: 100vh;
-  background-color: #E74C3C;
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -155,12 +156,41 @@ canvas {
   padding: 1px;
 }
 
+.haberdash {
+  background-color: #E74C3C;
+}
+
+.dae {
+  background-color: #27ae60;
+}
+
+.ls {
+  background-color: #3498db;
+}
+
 .mac {
+  height: 50%;
+  margin-bottom: -30px;
+}
+
+.image {
   height: 50%;
 }
 
-.phone {
-  height: 50%;
+.image-small {
+  height: 40%;
+}
+
+.margin-image {
+  margin-bottom: 10px;
+}
+
+.image-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%
 }
 
 .blurb-container {
@@ -175,14 +205,18 @@ canvas {
   align-items: center;
 }
 
-.haberdash-title {
+.project-title {
   font-size: 30px;
   margin-bottom: 5px;
   margin-top: 5px;
 }
 
-.haberdash-link {
+.project-link {
   text-decoration: none;
+  color: white;
+}
+
+.link {
   color: white;
 }
 
@@ -191,12 +225,16 @@ canvas {
   margin-left: 10px;
 }
 
+.dae-logo {
+  height: 70px;
+}
+
 .blurb {
   font-size: 18px;
 }
 
 @media (max-width: 768px) {
-  .haberdash {
+  .project {
     justify-content: center;
     height: 150vh;
   }
@@ -221,7 +259,7 @@ canvas {
 }
 
 @media (max-width: 552px) {
-  .haberdash {
+  .project {
     height: 200vh;
   }
 
