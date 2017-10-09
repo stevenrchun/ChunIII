@@ -1,0 +1,45 @@
+body {
+	margin: 0;
+}
+
+.ls-header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+  	background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+  	z-index: 0;
+}
+
+.ls-text-wrapper {
+	flex-basis: 70%;
+	font-family: 'Rubik', sans-serif;
+	color: white;
+}
+
+.ls-title {
+	font-size: 80px;
+}
+
+.card-wrapper {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	z-index: 1;
+}
+
+.card {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	border-radius: 10px;
+	width: 800px;
+	height: 800px;
+	margin-top: -20px;
+	background-color: white;
+}
+
+#sigma-container {
+	width: 800px;
+	height: 800px;
+	position: absolute;
+}
