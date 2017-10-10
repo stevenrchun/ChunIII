@@ -205,6 +205,22 @@ canvas {
   align-items: center;
 }
 
+.data-button {
+  border-radius: 5px;
+/*  border-style: solid;
+  border-color: white;
+  border-width: 2px;*/
+  width: fit-content;
+  padding: 8px 11px 8px 11px;
+  color: white;
+  background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
 .project-title {
   font-size: 30px;
   margin-bottom: 5px;

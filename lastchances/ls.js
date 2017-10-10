@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-  sigma.settings.defaultEdgeColor = "#2980b9";
+  sigma.settings.defaultEdgeColor = "#f1c40f";
   // // sigma.settings.defaultNodeColor = "#e74c3c";
   // // sigma.settings.nodeColor = 'default';
   sigma.settings.edgeColor = 'default';
@@ -37,8 +37,16 @@ $(document).ready(function() {
         n.originalColor = n.color;
       });
       s.graph.edges().forEach(function(e) {
-        e.originalColor = e.color;
+        if (e.attributes[0]) {
+          e.color = "#7873f5";
+          e.originalColor = e.color;
+        }
+        else {
+          e.originalColor = e.color;
+        }
       });
+
+      s.refresh();
 
       // When a node is clicked, we check for each node
       // if it is a neighbor of the clicked one. If not,
@@ -59,8 +67,19 @@ $(document).ready(function() {
         });
 
         s.graph.edges().forEach(function(e) {
-          if (toKeep[e.source] && toKeep[e.target])
-            e.color = e.originalColor;
+          if (toKeep[e.source] && toKeep[e.target]) {
+            // if match, purple
+            if (e.attributes[0]) {
+              e.color = "#7873f5"
+            }
+            // if incoming crush, red
+            else if (e.target == nodeId) {
+              e.color = "#e74c3c"
+            }
+            //if outgoing crush, blue
+            else if (e.source == nodeId)
+              e.color = "#2980b9";
+          }
           else
             e.color = '#eee';
         });
