@@ -1,4 +1,4 @@
-$(window).load(function() {
+$(document).ready(function() {
   $(".hello").addClass("visible animated fadeInDown");
   $(".subtitle").addClass("visible animated fadeInDown");
   $(".tiny").addClass("visible animated fadeInDown");
