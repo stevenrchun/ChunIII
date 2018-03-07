@@ -119,6 +119,18 @@ body {
   opacity: 0;
 }
 
+.work-status {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-logo {
+  width: 20%;
+  margin-left: 10px;
+}
+
 .tiny {
   font-size: 10px;
   opacity: 0;
